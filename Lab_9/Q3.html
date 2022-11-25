@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <div ng-app="myApp" ng-controller="myController">
+        <input type="text" placeholder="Price" ng-model="user.price">&nbsp;&nbsp;
+        <input type="text" placeholder="Quantity" ng-model="user.quantity">&nbsp;&nbsp;
+        <br><br>
+        <div>
+            {{user.price*user.quantity}}
+        </div>
+    </div>
+
+    <script src="angular-1.8.2/angular.js"></script>
+    <script>
+        var myApp = angular.module("myApp",[]);
+        myApp.controller('myController', function($scope) { 
+        });
+    </script>
+
+</body>
+</html>

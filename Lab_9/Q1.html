@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body ng-app="Q1" ng-controller ="ques1">
+        <h3 ng-model="message" >
+            {{message}}
+        </h3>
+        <script src="angular-1.8.2/angular.js"></script>
+        <script>
+            var app = angular.module("Q1",[]);
+            app.controller('ques1',['$scope',function($scope,$routeParams){
+                  $scope.message = "CSE Branch, MIT Manipal";
+            }]);
+        </script>
+    </body>
+</html>
