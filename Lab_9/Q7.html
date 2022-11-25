@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <script src="angular-1.8.2/angular.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myController">
+        {{ jsonExpr | json}}
+    </div>
+
+    <script>
+        var myApp = angular.module("myApp",[]);
+        myApp.controller('myController', function($scope) { 
+            $scope.jsonExpr = {FirstName:"Jithin", LastName:"Joseph", Uni:"MIT, Manipal"};
+        });
+    </script>
+</body>
+</html>

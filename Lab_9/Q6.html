@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <script src="angular-1.8.2/angular.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myController">
+        2 Decimal Places: {{(22 / 7) | number:2}} <br>
+        4 Decimal Places: {{(22 / 7) | number:4}}
+    </div>
+
+    <script>
+        var myApp = angular.module("myApp",[]);
+        myApp.controller('myController', function($scope) { 
+        });
+    </script>
+</body>
+</html>
